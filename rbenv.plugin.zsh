@@ -1,7 +1,7 @@
 # Adapted from https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/rbenv/rbenv.plugin.zsh
 
 FOUND_RBENV=0
-rbenvdirs=("$HOME/.rbenv" "/usr/local/rbenv" "/opt/rbenv" "/usr/local/opt/rbenv")
+rbenvdirs=("$HOME/.rbenv" "$HOME/.local/rbenv" "/usr/local/rbenv" "/opt/rbenv" "/usr/local/opt/rbenv")
 
 for rbenvdir in "${rbenvdirs[@]}" ; do
   if [ -d $rbenvdir/bin -a $FOUND_RBENV -eq 0 ] ; then
